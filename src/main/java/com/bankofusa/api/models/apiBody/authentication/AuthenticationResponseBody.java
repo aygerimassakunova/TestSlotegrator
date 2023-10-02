@@ -1,4 +1,4 @@
-package com.bankofusa.api.models.authentication;
+package com.bankofusa.api.models.apiBody.authentication;
 import com.bankofusa.api.models.BaseModel;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Builder;

@@ -1,4 +1,4 @@
-package com.bankofusa.api.models.authentication;
+package com.bankofusa.api.models.players;
 import com.bankofusa.api.models.BaseModel;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Builder;
@@ -9,7 +9,7 @@ import lombok.EqualsAndHashCode;
 @Builder
 @EqualsAndHashCode(callSuper=false)
 
-public class AuthenticationResponseBody extends BaseModel {
+public class PlayerResponseBody extends BaseModel {
     @JsonProperty(value = "id")
     int idNumber;
     @JsonProperty(value = "username")
