@@ -6,15 +6,16 @@ import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.Arrays;
 
 import static com.bankofusa.api.application.BaseEndPoints.*;
 import static io.restassured.RestAssured.given;
-
+@Data
 @Slf4j
-public abstract class ApiRequest {
+public class ApiRequest {
     protected String url;
     protected RequestSpecification requestSpecification;
     protected Response response;
